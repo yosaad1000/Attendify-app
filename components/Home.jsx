@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
 
-const Home = () => {
+export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
@@ -10,7 +10,7 @@ const Home = () => {
       </View>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -36,5 +36,3 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
-
-export default Home;
