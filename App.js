@@ -8,15 +8,25 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen 
-          name="Home" 
-          component={Home}
-          options={{ title: 'SafeMinder' }}
-        />
-      </Stack.Navigator>
+    <>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen 
+            name="Home" 
+            component={Home}
+            options={{ 
+              title: 'SafeMinder',
+              headerStyle: {
+                backgroundColor: '#f8f9fa',
+              },
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
       <StatusBar style="auto" />
-    </NavigationContainer>
+    </>
   );
 }
