@@ -9,7 +9,8 @@
     "scheme": "safeminder",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "contain"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -28,6 +29,6 @@
     },
     "plugins": [
       "expo-router"
-    }
+    ]
   }
 }
